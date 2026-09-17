@@ -51,7 +51,7 @@ This repository contains the code for the analysis presented in "Cascade-up Rupt
     - Table 2 and Table 3 are created by refering these outputs.
 
 ### Frequency Distribution by instability
-1. `analysis/instability_frequency.py`
+1. `analysis/03_instability_frequency.py`
     - The frequency distribution of earthquakes by instability.
     - The output files are stored in `figures/instability_frequency`. This corresponds to Fig.10.
 
