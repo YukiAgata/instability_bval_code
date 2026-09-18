@@ -13,6 +13,7 @@ This repository contains the code for the analysis presented in "Cascade-up Rupt
 ### Analysis of the Synthetic Catalogs
 1. `analysis/01_synthetic_catalog_creation.ipynb`
     - Creation of the synthetic earthquake and stress catalog.
+    - `stressinverse_dir` is the location of the program "Stressinverse_1.1.3" (Vavryčuk, 2014). Change this depending on where you have.
 
 2. `analysis/02_catalog_analysis.py`
     - Analysis of the catalogs. Run
