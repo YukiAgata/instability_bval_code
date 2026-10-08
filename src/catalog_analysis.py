@@ -162,9 +162,6 @@ def compute_log_likelihood(params, theob_calc, instability, magnitude, Mc, model
     if b_min < 0:
         ll = -np.inf
         return ll
-    # if delta_I <= 0:
-    #     ll = -np.inf
-    #     return ll
     if model_type == "linear":
         if (delta_I < 0) or (delta_I > 1):
             ll = -np.inf
