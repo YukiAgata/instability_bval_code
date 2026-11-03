@@ -49,7 +49,7 @@ This repository contains the code for the analysis presented in "Cascade-up Rupt
     - Maximum likelihood estimation of parameters ($\mu, b_{max}, b_{min}, \Delta I$) is conducted at the same time.
     - The results of parameter estimations are stored in `data/analysis_results.csv`.
     - The output figures are stored in `figures/result`. Figs. 7, 8, 9(c)(d), S1, and S3 are included in this output.
-    - Table 2 and 3 are created by refering these outputs.
+    - Table 2, 3 and 4 are created by refering these outputs.
 
 ### Frequency Distribution by instability
 1. `analysis/03_instability_frequency.py`
