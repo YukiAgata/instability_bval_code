@@ -37,7 +37,7 @@ This repository contains the code for the analysis presented in "Faulting Instab
         - 4 CSV files in `data/processed/`
         - 13 figures in `figures/dataset/`(including Figs. 6, 9a, 9b, and S2)
     - Estimates the magnitude of completeness ($M_c$) as well.
-  - Creates datasets accounting for geothermal fields (GTF). The radius can be modified by adjusting the `r_km` variable.
+    - Creates datasets accounting for geothermal fields (GTF). The radius can be modified by adjusting the `r_km` variable.
 
 3. `analysis/02_catalog_analysis.py`
     - Run
