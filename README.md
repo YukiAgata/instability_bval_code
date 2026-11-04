@@ -7,7 +7,7 @@ This repository contains the code for the analysis presented in "Faulting Instab
 - `analysis/`: Jupyter notebooks and analysis scripts used in the study.
 - `src/`: Python source code.
 - `data/`: Data used in the analysis.
-- `figures/`: Figures generated during the analysis(created automatically).
+- `figures/`: Figures generated during the analysis (created automatically).
 
 ## Analysis workflow
 
