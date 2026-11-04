@@ -255,18 +255,18 @@ jobs = [
         "exp",
         102
     ),
-    # (
-    #     "dataset1_exp",
-    #     "../data/california/processed/dataset1.csv",
-    #     "exp",
-    #     103
-    # ),
-    # (
-    #     "dataset2_exp",
-    #     "../data/california/processed/dataset2.csv",
-    #     "exp",
-    #     104
-    # ),
+    (
+        "dataset1_exp",
+        "../data/california/processed/dataset1.csv",
+        "exp",
+        103
+    ),
+    (
+        "dataset2_exp",
+        "../data/california/processed/dataset2.csv",
+        "exp",
+        104
+    ),
     (
         "no_error_linear",
         "../data/synthetic/catalog_no_error_linear.csv",
@@ -285,30 +285,30 @@ jobs = [
         "linear",
         107
     ),
-    # (
-    #     "dataset1_linear",
-    #     "../data/california/processed/dataset1.csv",
-    #     "linear",
-    #     108
-    # ),
-    # (
-    #     "dataset2_linear",
-    #     "../data/california/processed/dataset2.csv",
-    #     "linear",
-    #     109
-    # ),
-    # (
-    #     "dataset1_GTF10in_exp",
-    #     "../data/california/processed/dataset1_GTF10in.csv",
-    #     "exp",
-    #     110
-    # ),
-    # (
-    #     "dataset1_GTF10out_exp",
-    #     "../data/california/processed/dataset1_GTF10out.csv",
-    #     "exp",
-    #     111
-    # )
+    (
+        "dataset1_linear",
+        "../data/california/processed/dataset1.csv",
+        "linear",
+        108
+    ),
+    (
+        "dataset2_linear",
+        "../data/california/processed/dataset2.csv",
+        "linear",
+        109
+    ),
+    (
+        "dataset1_GTF10in_exp",
+        "../data/california/processed/dataset1_GTF10in.csv",
+        "exp",
+        110
+    ),
+    (
+        "dataset1_GTF10out_exp",
+        "../data/california/processed/dataset1_GTF10out.csv",
+        "exp",
+        111
+    )
 ]
 
 def run_job(job):
@@ -318,7 +318,6 @@ if __name__ == "__main__":
     with ProcessPoolExecutor(max_workers=4, max_tasks_per_child=1) as executor:
         results = list(executor.map(run_job, jobs))
 
-    # results を DataFrame に変換
     results_df = pd.DataFrame(
         results,
         columns=["name", "m_MLE_quad", "params_MLE_quad", "log_likelihood_MLE_quad"]
